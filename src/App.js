@@ -4,15 +4,18 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
-      {" "}
-      Weather App
-      <a
-        href="https://github.com/BilqisA27/my-react-weather-app.git"
-        target="_blank"
-      >
+      <div className="container">
         {" "}
-        Github link{" "}
-      </a>
+        Weather App
+        <a
+          href="https://github.com/BilqisA27/my-react-weather-app.git"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Github link{" "}
+        </a>
+      </div>
     </div>
   );
 }
