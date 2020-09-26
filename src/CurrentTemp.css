@@ -1,0 +1,67 @@
+.CurrentTemp li {
+  list-style: none;
+}
+
+.CurrentTemp ul {
+  padding: 0;
+}
+.CurrentTemp .weather-image {
+  font-size: 70px;
+  line-height: 15px;
+}
+.CurrentTemp .currentTemp {
+  font-size: 40px;
+}
+
+.CurrentTemp .last-updated {
+  font-size: 16px;
+}
+.CurrentTemp .card-subtitle {
+  font-size: 16px;
+}
+
+.CurrentTemp .city {
+  font-size: 25px;
+  display: block;
+  font-family: "Fjalla One", sans-serif;
+  color: bisque;
+}
+
+.CurrentTemp .weather-image {
+  position: relative;
+  right: -15px;
+}
+
+.CurrentTemp .card.ml-2 {
+  max-height: 220px;
+  max-width: 325px;
+}
+.CurrentTemp .card-body.day {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  padding: 0 15px;
+}
+
+.CurrentTemp .card-title {
+  font-size: 28px;
+  color: bisque;
+}
+
+.CurrentTemp sup {
+  font-size: 13px;
+}
+.CurrentTemp .city {
+  position: relative;
+  bottom: 20px;
+}
+.CurrentTemp .temp-description {
+  position: relative;
+  top: 70px;
+  left: 20px;
+}
+.CurrentTemp .temp-description .active {
+  color: bisque;
+  cursor: default;
+}
+.CurrentTemp .temp-description .active:hover {
+  text-decoration: none;
+}

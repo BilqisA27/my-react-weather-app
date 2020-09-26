@@ -1,0 +1,25 @@
+.Weather .container {
+  max-width: 150%;
+}
+
+.btn.btn-outline-success {
+  margin: 0;
+}
+
+.card-body {
+  background-image: linear-gradient(to top, #a3bded 0%, #476c91 100%);
+  margin: 0;
+  color: bisque;
+}
+
+.temp-description .active {
+  color: bisque;
+  cursor: default;
+}
+.temp-description .active:hover {
+  text-decoration: none;
+}
+
+#current-description::first-letter {
+  text-transform: uppercase;
+}
