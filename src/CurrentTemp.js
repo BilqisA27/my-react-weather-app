@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import ReactAnimatedWeather from "react-animated-weather";
 
@@ -15,6 +16,7 @@ export default function CurrentTemp(props) {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
+      date: new Date(response.data.dt * 1000),
     });
   }
   if (weatherData.done) {
@@ -37,7 +39,10 @@ export default function CurrentTemp(props) {
                           </li>
                           <li className="last-updated">
                             Last updated:
-                            <span className="date"> Monday Sept 18</span>
+                            <span className="date">
+                              {" "}
+                              <FormattedDate date={weatherData.date} />
+                            </span>
                           </li>
                           <li className="card-subtitle mb-2 text-capitalize">
                             {weatherData.description}
