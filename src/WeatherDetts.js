@@ -25,12 +25,7 @@ export default function WeatherDetts(props) {
             <li className="card-title">
               <span className="weather-image">
                 {" "}
-                <ReactAnimatedWeather
-                  icon="CLEAR_DAY"
-                  color="goldenrod"
-                  size={80}
-                  animate={true}
-                />
+                <img src={props.data.iconUrl} />
               </span>{" "}
             </li>
           </ul>

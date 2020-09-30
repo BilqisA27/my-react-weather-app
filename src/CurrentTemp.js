@@ -26,6 +26,7 @@ export default function CurrentTemp(props) {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       date: new Date(response.data.dt * 1000),
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
