@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import UnitConversion from "./UnitConversion";
 import ReactAnimatedWeather from "react-animated-weather";
 
 export default function WeatherDetts(props) {
@@ -33,16 +34,7 @@ export default function WeatherDetts(props) {
         <div className="col-6 ">
           <ul className="temp-description">
             <div className="current-details">
-              <li className="currentTemp">
-                {Math.round(props.data.temperature)}{" "}
-                <sup>
-                  <a href="<" className="active">
-                    {" "}
-                    ℃{" "}
-                  </a>{" "}
-                  |<a href="<"> ℉ </a>
-                </sup>
-              </li>
+              <UnitConversion celsius={props.data.temperature} />
               <li>
                 <small>
                   Humidity:
