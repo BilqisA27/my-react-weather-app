@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import WeatherDetts from "./WeatherDetts";
+import WeatherForecast from "./WeatherForecast";
+
 import axios from "axios";
 import "./CurrentTemp.css";
 const Emoji = (props) => (
@@ -31,7 +33,7 @@ export default function CurrentTemp(props) {
   }
 
   function search() {
-    const apiKey = "adc304e0d775bfcd34cc43d2a3830fc0";
+    const apiKey = "f20508df85d5df6eefc781e283c32c80";
     let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
@@ -48,46 +50,49 @@ export default function CurrentTemp(props) {
   if (weatherData.done) {
     return (
       <div className="CurrentTemp">
-        <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-8 pr-0 mt-4">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Search City"
-                autoFocus="on"
-                onChange={handleChangeCity}
-              />
-            </div>
-            <div className="col-1 pl-0 mt-4">
-              <button type="submit" className="btn btn-outline-primary">
-                <span>
-                  {" "}
-                  <Emoji label="search" symbol="🔍" />
-                </span>
-              </button>
-            </div>
-            <div className="col-1 pl-0 mt-4">
-              <button type="button" className="btn btn-info">
-                Current
-              </button>
-            </div>
-          </div>
-        </form>
-        <br />
-        <div className="card ml-2">
-          <div className="card-body day">
+        <div className="card-body">
+          <form onSubmit={handleSubmit}>
             <div className="row">
-              <div className="col">
-                <div>
-                  <div className="card-text">
-                    <br />
-                    <WeatherDetts data={weatherData} />
+              <div className="col-8 pr-0 mt-4">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Search City"
+                  autoFocus="on"
+                  onChange={handleChangeCity}
+                />
+              </div>
+              <div className="col-1 pl-0 mt-4">
+                <button type="submit" className="btn btn-outline-primary">
+                  <span>
+                    {" "}
+                    <Emoji label="search" symbol="🔍" />
+                  </span>
+                </button>
+              </div>
+              <div className="col-1 pl-0 mt-4">
+                <button type="button" className="btn btn-info">
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+          <br />
+          <div className="card ml-2">
+            <div className="card-body day">
+              <div className="row">
+                <div className="col">
+                  <div>
+                    <div className="card-text">
+                      <br />
+                      <WeatherDetts data={weatherData} />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <WeatherForecast city={weatherData.city} />
         </div>
       </div>
     );

@@ -1,0 +1,7 @@
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherForecast li {
+  margin: 20px 0;
+}

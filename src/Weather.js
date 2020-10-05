@@ -8,9 +8,7 @@ export default function Weather() {
     <div className="Weather">
       <div className="container">
         <div className="card w-50">
-          <div className="card-body">
-            <CurrentTemp defaultCity="Vancouver" />
-          </div>
+          <CurrentTemp defaultCity="Vancouver" />
         </div>
       </div>
     </div>

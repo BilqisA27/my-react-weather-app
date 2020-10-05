@@ -31,14 +31,18 @@
   position: relative;
   right: -15px;
 }
-
+.card-body {
+  width: 620px;
+}
 .CurrentTemp .card.ml-2 {
   max-height: 220px;
-  max-width: 325px;
+  max-width: 350px;
 }
+
 .CurrentTemp .card-body.day {
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   padding: 0 15px;
+  width: 350px;
 }
 
 .CurrentTemp .card-title {

@@ -8,7 +8,6 @@ export default function App() {
       <div className="container">
         {" "}
         <Weather />
-        Weather App
         <a
           href="https://github.com/BilqisA27/my-react-weather-app.git"
           target="_blank"

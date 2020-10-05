@@ -1,7 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import UnitConversion from "./UnitConversion";
-import ReactAnimatedWeather from "react-animated-weather";
 
 export default function WeatherDetts(props) {
   return (
@@ -26,7 +25,7 @@ export default function WeatherDetts(props) {
             <li className="card-title">
               <span className="weather-image">
                 {" "}
-                <img src={props.data.iconUrl} />
+                <img src={props.data.iconUrl} alt={props.data.description} />
               </span>{" "}
             </li>
           </ul>
@@ -38,7 +37,7 @@ export default function WeatherDetts(props) {
               <li>
                 <small>
                   Humidity:
-                  <span> {props.data.humidity}</span>
+                  <span> {props.data.humidity}%</span>
                 </small>
               </li>
               <li>
