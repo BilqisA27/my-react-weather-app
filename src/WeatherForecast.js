@@ -13,7 +13,6 @@ export default function WeatherForecast(props) {
   }
 
   if (loaded && props.city === forecast.city.name) {
-    console.log(forecast);
     return (
       <div className="WeatherForecast row">
         {forecast.list.slice(0, 6).map(function (forecastItem) {
