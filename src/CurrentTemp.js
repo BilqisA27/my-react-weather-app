@@ -4,16 +4,6 @@ import WeatherForecast from "./WeatherForecast";
 
 import axios from "axios";
 import "./CurrentTemp.css";
-const Emoji = (props) => (
-  <span
-    className="emoji"
-    role="img"
-    aria-label={props.label ? props.label : ""}
-    aria-hidden={props.label ? "false" : "true"}
-  >
-    {props.symbol}
-  </span>
-);
 
 export default function CurrentTemp(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -49,7 +39,7 @@ export default function CurrentTemp(props) {
 
   if (weatherData.done) {
     return (
-      <div className="CurrentTemp">
+      <div className="currentTemp">
         <div className="card-body">
           <form onSubmit={handleSubmit}>
             <div className="row">
@@ -63,16 +53,8 @@ export default function CurrentTemp(props) {
                 />
               </div>
               <div className="col-1 pl-0 mt-4">
-                <button type="submit" className="btn btn-outline-primary">
-                  <span>
-                    {" "}
-                    <Emoji label="search" symbol="🔍" />
-                  </span>
-                </button>
-              </div>
-              <div className="col-1 pl-0 mt-4">
-                <button type="button" className="btn btn-info">
-                  Current
+                <button type="submit" className="btn btn-info">
+                  search
                 </button>
               </div>
             </div>

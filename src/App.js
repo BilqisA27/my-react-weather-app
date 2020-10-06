@@ -8,14 +8,17 @@ export default function App() {
       <div className="container">
         {" "}
         <Weather />
-        <a
-          href="https://github.com/BilqisA27/my-react-weather-app.git"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          Github link{" "}
-        </a>
+        <div className="link">
+          This project was coded by Bilqis Agboke and is
+          <a
+            className="link"
+            href="https://github.com/BilqisA27/my-react-weather-app.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open-sourced on GitHub{" "}
+          </a>
+        </div>
       </div>
     </div>
   );

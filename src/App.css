@@ -1,3 +1,4 @@
-.App {
-  margin: 0 auto;
+.App .link {
+  position: relative;
+  left: 15px;
 }

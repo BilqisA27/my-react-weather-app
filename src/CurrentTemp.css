@@ -1,71 +1,71 @@
-.CurrentTemp li {
+.currentTemp li {
   list-style: none;
 }
 
-.CurrentTemp ul {
+.currentTemp ul {
   padding: 0;
 }
-.CurrentTemp .weather-image {
+.currentTemp .weather-image {
   font-size: 70px;
   line-height: 15px;
 }
-.CurrentTemp .currentTemp {
+.currentTemp .currentTemp {
   font-size: 40px;
 }
 
-.CurrentTemp .last-updated {
+.currentTemp .last-updated {
   font-size: 16px;
 }
-.CurrentTemp .card-subtitle {
+.currentTemp .card-subtitle {
   font-size: 16px;
 }
 
-.CurrentTemp .city {
+.currentTemp .city {
   font-size: 25px;
   display: block;
   font-family: "Fjalla One", sans-serif;
   color: bisque;
 }
 
-.CurrentTemp .weather-image {
+.currentTemp .weather-image {
   position: relative;
   right: -15px;
 }
 .card-body {
   width: 620px;
 }
-.CurrentTemp .card.ml-2 {
+.currentTemp .card.ml-2 {
   max-height: 220px;
   max-width: 350px;
 }
 
-.CurrentTemp .card-body.day {
+.currentTemp .card-body.day {
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   padding: 0 15px;
   width: 350px;
 }
 
-.CurrentTemp .card-title {
-  font-size: 28px;
+.currentTemp .card-title {
+  font-size: 8px;
   color: bisque;
 }
 
-.CurrentTemp sup {
+.currentTemp sup {
   font-size: 13px;
 }
-.CurrentTemp .city {
+.currentTemp .city {
   position: relative;
   bottom: 20px;
 }
-.CurrentTemp .temp-description {
+.currentTemp .temp-description {
   position: relative;
   top: 70px;
   left: 20px;
 }
-.CurrentTemp .temp-description .active {
+.currentTemp .temp-description .active {
   color: bisque;
   cursor: default;
 }
-.CurrentTemp .temp-description .active:hover {
+.currentTemp .temp-description .active:hover {
   text-decoration: none;
 }

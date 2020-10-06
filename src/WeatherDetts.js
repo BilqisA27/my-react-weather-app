@@ -18,7 +18,7 @@ export default function WeatherDetts(props) {
                 <FormattedDate date={props.data.date} />
               </span>
             </li>
-            <li className="card-subtitle mb-2 text-capitalize">
+            <li className="last-updated text-capitalize">
               {props.data.description}
             </li>
 

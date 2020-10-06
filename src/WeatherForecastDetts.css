@@ -1,0 +1,8 @@
+.WeatherForecastDetts.col-2 {
+  font-size: 15px;
+  margin-top: 20px;
+}
+.WeatherForecastDetts .image {
+  position: relative;
+  right: 26px;
+}

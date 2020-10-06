@@ -1,5 +1,6 @@
 import React from "react";
 import IconUrl from "./IconUrl";
+import "./WeatherForecastDetts.css";
 
 export default function WeatherForecastDetts(props) {
   function hours() {
@@ -14,15 +15,13 @@ export default function WeatherForecastDetts(props) {
   }
 
   return (
-    <div className="WeatherForecastDetts">
-      <ul className="col">
-        <li>{hours()}</li>
-        <li>
-          {" "}
-          <IconUrl data={props.details.weather[0].icon} />
-        </li>
-        <li>{temperature()}</li>
-      </ul>
+    <div className="WeatherForecastDetts col-2">
+      <div className="col">{hours()}</div>
+      <div className="col image">
+        {" "}
+        <IconUrl data={props.details.weather[0].icon} />
+      </div>
+      <div className="col">{temperature()}</div>
     </div>
   );
 }
